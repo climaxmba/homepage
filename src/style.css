@@ -14,6 +14,11 @@ body {
   background-color: var(--mainbg);
 }
 
+a.iconwrapper {
+  color: white;
+  text-decoration: none;
+}
+
 #content {
   margin-top: 2rem;
 }
@@ -94,7 +99,12 @@ h3 {
 .btns-contr {
   align-self: flex-end;
   display: flex;
-  gap: 8px;
+  gap: 0.8rem;
+}
+
+.btns-contr svg {
+  width: 1.8rem;
+  cursor: pointer;
 }
 
 /* Projects */
@@ -130,6 +140,10 @@ h3 {
   justify-content: space-between;
 }
 
+.project-name-nav svg {
+  width: 1.5rem;
+}
+
 .project-details {
   margin: 0.8rem 1.5rem;
   display: flex;
@@ -156,6 +170,10 @@ h3 {
   margin: 0;
 }
 
+#contact-sectn address {
+  font-style: normal;
+}
+
 #contact-sectn > div:first-child {
   display: flex;
   flex-direction: column;
@@ -168,14 +186,28 @@ h3 {
   gap: 0.25rem;
 }
 
-#contact-grp a {
+#contact-grp > a {
   color: inherit;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#contact-grp svg {
+  fill: white;
+  width: 1.6rem;
 }
 
 #socialbtns-contr {
   display: flex;
-  gap: 0.5rem;
+  gap: 1.3rem;
+}
+
+#socialbtns-contr svg {
+  fill: white;
+  width: 2rem;
+  cursor: pointer;
 }
 
 #person-second-img {
