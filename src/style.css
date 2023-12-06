@@ -1,5 +1,5 @@
 html {
-  --mainimg: 450px;
+  --mainimg: 420px;
   --projectsimg-w: 300px;
   --projectsimg-h: 250px;
   --contactimg-h: 450px;
@@ -11,6 +11,7 @@ html {
 body {
   box-sizing: border-box;
   margin: 0;
+  overflow-x: hidden;
   background-color: var(--mainbg);
 }
 
@@ -25,17 +26,20 @@ a.iconwrapper {
 
 #content > section {
   z-index: 2;
+  position: relative;
 }
 
 #decorativebg {
   pointer-events: none;
   position: absolute;
   top: 0;
-  height: 60vh;
-  width: 100%;
+  z-index: 1;
+  height: 500px;
+  width: 120%;
   background-color: var(--decor-color);
   box-shadow: 0 2px 3px 2px #00000020;
-  z-index: 1;
+  transform: rotate(-15deg);
+  transform-origin: bottom left;
 }
 
 section:not(#contact-sectn) {
@@ -108,6 +112,10 @@ h3 {
 }
 
 /* Projects */
+#projects-sectn {
+  margin-top: 6rem !important;
+}
+
 #projects-contr {
   list-style: none;
   padding: 0;
