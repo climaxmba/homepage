@@ -290,3 +290,50 @@ h3 {
     display: none;
   }
 }
+
+@media (width < 680px) {
+  html {
+    --mainimg-h: 400px;
+    --mainimg-w: 90vw;
+    --projectsimg-w: 200px;
+  }
+
+  #about-sectn {
+    grid-template: repeat(3, auto) / 1fr;
+  }
+
+  #personname {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    justify-self: center;
+    text-align: center;
+  }
+  
+  #person-img {
+    grid-row: 1 / 3;
+    grid-column: 1 / -1;
+    width: var(--mainimg-w);
+  }
+  
+  #about-contr {
+    padding: 2rem 1rem;
+    grid-row: 3 / -1;
+    grid-column: 1 / -1;
+    display: flex;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  #about-contr::before {
+    content: none;
+  }
+  
+  #about-contr .btns-contr {
+    display: flex;
+    align-self: center;
+  }
+
+  #contact-sectn>div:first-child {
+    flex-direction: column;
+  }
+}
