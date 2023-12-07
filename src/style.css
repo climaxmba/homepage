@@ -1,5 +1,6 @@
 html {
-  --mainimg: 420px;
+  --mainimg-h: 420px;
+  --mainimg-w: var(--mainimg-h);
   --projectsimg-w: 300px;
   --projectsimg-h: 250px;
   --contactimg-h: 450px;
@@ -61,7 +62,7 @@ h3 {
 /* About */
 #about-sectn {
   display: grid;
-  grid-template: 1fr / var(--mainimg) 2fr;
+  grid-template: 1fr / var(--mainimg-w) 2fr;
   align-items: center;
 }
 
@@ -86,7 +87,7 @@ h3 {
 
 #person-img {
   background-color: burlywood;
-  height: var(--mainimg);
+  height: var(--mainimg-w);
 }
 
 #about-contr {
@@ -226,12 +227,12 @@ h3 {
 
 @media (width < 900px) {
   html {
-    --mainimg: 280px;
+    --mainimg-w: 280px;
   }
 
   #about-sectn {
     display: grid;
-    grid-template: 3rem auto auto / 2rem calc(var(--mainimg) - 4rem) 2rem 200px 3rem;
+    grid-template: 3rem auto auto / 2rem calc(var(--mainimg-w) - 4rem) 2rem 200px 3rem;
     align-items: start;
   }
   
@@ -263,8 +264,8 @@ h3 {
     top: 0;
     left: 0;
     float: left;
-    width: calc(var(--mainimg) - 2rem);
-    height: calc(var(--mainimg) - 5rem);
+    width: calc(var(--mainimg-w) - 2rem);
+    height: calc(var(--mainimg-w) - 5rem);
   }
 
   #about-contr > h2 {
