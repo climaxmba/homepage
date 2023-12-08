@@ -14,6 +14,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   background-color: var(--mainbg);
+  min-height: 100vh;
 }
 
 a.iconwrapper {
@@ -25,6 +26,7 @@ a.iconwrapper {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 #content>section {
@@ -124,7 +126,7 @@ h3 {
   padding: 0;
   display: grid;
   gap: 3rem;
-  grid-template-columns: repeat(auto-fill, minmax(var(--projectsimg-w), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(var(--projectsimg-w), 1fr));
 }
 
 #projects-contr li {
@@ -143,7 +145,8 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 .project-name-nav {
@@ -173,6 +176,7 @@ h3 {
   background-color: var(--decor-color);
   color: white;
   display: flex;
+  flex-grow: 1;
   gap: 2rem;
   justify-content: center;
 }
@@ -289,9 +293,14 @@ h3 {
   #about-contr .btns-contr {
     display: none;
   }
+
+  #contact-sectn {
+    align-items: center;
+    padding: 2rem;
+  }
 }
 
-@media (width < 680px) {
+@media (width < 650px) {
   html {
     --mainimg-h: 400px;
     --mainimg-w: 90vw;
@@ -306,7 +315,7 @@ h3 {
     grid-row: 2 / 3;
     grid-column: 1 / -1;
     justify-self: center;
-    text-align: center;
+    margin: 1rem;
   }
   
   #person-img {
@@ -329,11 +338,29 @@ h3 {
   }
   
   #about-contr .btns-contr {
+    margin-top: 1rem;
     display: flex;
     align-self: center;
   }
 
   #contact-sectn>div:first-child {
     flex-direction: column;
+    margin-bottom: var(--contactimg-h);
+  }
+
+  #contact-sectn h2 {
+    text-align: center;
+  }
+
+  #socialbtns-contr {
+    justify-content: center;
+  }
+
+  #person-second-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
   }
 }
