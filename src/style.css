@@ -129,7 +129,7 @@ h3 {
   list-style: none;
   padding: 0;
   display: grid;
-  gap: 3rem;
+  gap: 3rem 2rem;
   grid-template-columns: repeat(auto-fit, minmax(var(--projectsimg-w), 1fr));
 }
 
