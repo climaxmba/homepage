@@ -77,6 +77,14 @@ img {
   object-fit: cover;
 }
 
+.iconwrapper svg {
+  transition: transform 0.2s linear;
+}
+
+.iconwrapper svg:hover {
+  transform: scale(1.2);
+}
+
 /* About */
 #about-sectn {
   display: grid;
