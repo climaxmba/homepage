@@ -11,9 +11,13 @@
 <body>
     <div id="content">
         <div id="decorativebg"></div>
+        <!-- Photo by Lukas & mohamed abdelghaffar on Pexels -->
 
         <section id="about-sectn">
-            <div id="person-img"></div>
+            <picture id="person-img">
+                <source media="(min-width: 500px)" srcset="img/personimg1024.jpg">
+                <img src="img/personimg683.jpg" alt="">
+            </picture>
             <h1 id="personname">George Williams</h1>
             <div id="about-contr">
                 <h2>About me</h2>
@@ -147,7 +151,10 @@
                 </div>
             </div>
 
-            <div id="person-second-img"></div>
+            <picture id="person-second-img">
+                <source media="(min-width: 500px)" srcset="img/contactimgl.jpg">
+                <img src="img/contactimgs.jpg" alt="">
+            </picture>
         </section>
     </div>
 </body>
