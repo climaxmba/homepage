@@ -85,6 +85,11 @@ img {
   transform: scale(1.2);
 }
 
+.iconwrapper.nopreview {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
 /* About */
 #about-sectn {
   display: grid;
@@ -165,7 +170,6 @@ img {
 .projectsimg {
   height: var(--projectsimg-h);
   width: 100%;
-  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
